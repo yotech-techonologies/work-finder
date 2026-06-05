@@ -1,105 +1,148 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Job Finder Nigeria</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
-<h1>Job Finder Nigeria</h1>
-<nav>
-<a href="#home">Home</a>
-<a href="#jobs">Local Jobs</a>
-<a href="#finder">Job Finder</a>
-<a href="#dropper">Job Dropper</a>
-<a href="#contact">Contact</a>
-</nav>
+    <h1>Job Finder Nigeria</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#local-jobs">Local Jobs</a>
+        <a href="#jobfinder">Job Finder</a>
+        <a href="#jobdropper">Job Dropper</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="hero" id="home">
-<h2>Find Local & Remote Jobs Across Nigeria</h2>
-<p>Connecting employers and job seekers.</p>
+<section id="home" class="hero">
+    <h2>Find Your Dream Job in Nigeria</h2>
+    <p>Connecting Job Seekers with Employers Across Nigeria.</p>
+
+```
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+    <img src="images/job1.jpg" alt="Nigerian Workers">
+    <img src="images/job2.jpg" alt="Office Job">
+    <img src="images/job3.jpg" alt="Construction Workers">
+    <img src="images/job4.jpg" alt="Remote Workers">
 </div>
+```
+
 </section>
 
-<section id="jobs">
-<h2>Featured Local Job Categories</h2>
+<section id="local-jobs">
+    <h2>Popular Job Categories</h2>
+
+```
 <ul>
-<li>Oil & Gas Jobs</li>
-<li>Banking Jobs</li>
-<li>Government Jobs</li>
-<li>Healthcare Jobs</li>
-<li>Teaching Jobs</li>
-<li>Engineering Jobs</li>
-<li>IT & Technology Jobs</li>
-<li>Remote Jobs</li>
-<li>driving Jobs</li>
-<li>nanny jobs</li>
-<li>janitor jobs</li>
-  
+    <li>IT & Technology Jobs</li>
+    <li>Banking Jobs</li>
+    <li>Healthcare Jobs</li>
+    <li>Education Jobs</li>
+    <li>Engineering Jobs</li>
+    <li>Government Jobs</li>
+    <li>Oil & Gas Jobs</li>
+    <li>Remote Jobs</li>
+    <li>Driving Jobs</li>
+    <li>Janitor Jobs</li>
+    <li>Nanny Jobs</li>
 </ul>
+```
+
 </section>
 
-<section id="finder">
-<h2>Job Finder Registration</h2>
+<section id="jobfinder">
+    <h2>Job Seeker Registration</h2>
+
+```
 <form action="https://formsubmit.co/yotechtechnologies@gmail.com" method="POST">
-<input type="text" name="Name" placeholder="Full Name" required>
-<input type="email" name="Email" placeholder="Email" required>
-<input type="tel" name="Phone" placeholder="Phone Number" required>
-<select name="Category">
-<option>IT & Technology</option>
-<option>Banking</option>
-<option>Healthcare</option>
-<option>Education</option>
-<option>Engineering</option>
-<option>Government Jobs</option>
-<option>Oil & Gas</option>
-<option>Remote Jobs</option>
-<option>driving Jobs</option>
-<option>nanny jobs</option>
-<option>janitor jobs</option>
-  
-</select>
-<button type="submit">Register</button>
+
+    <input type="hidden" name="_subject" value="New Job Seeker Registration">
+
+    <input type="text" name="fullname" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <select name="job_category" required>
+        <option value="">Select Job Category</option>
+        <option>IT & Technology</option>
+        <option>Banking</option>
+        <option>Healthcare</option>
+        <option>Education</option>
+        <option>Engineering</option>
+        <option>Government Jobs</option>
+        <option>Oil & Gas</option>
+        <option>Remote Jobs</option>
+        <option>Driving Jobs</option>
+        <option>Janitor Jobs</option>
+        <option>Nanny Jobs</option>
+    </select>
+
+    <button type="submit">Register</button>
+
+</form>
+```
+
 </section>
 
-<section id="dropper">
-<h2>Job Dropper Registration</h2>
+<section id="jobdropper">
+    <h2>Employer / Job Dropper Registration</h2>
+
+```
 <form action="https://formsubmit.co/yotechtechnologies@gmail.com" method="POST">
-<input type="text" name="Company" placeholder="Company Name" required>
-<input type="email" name="Email" placeholder="Email" required>
-<input type="text" name="JobTitle" placeholder="Job Title" required>
-<select name="Category">
-<option>IT & Technology</option>
-<option>Banking</option>
-<option>Healthcare</option>
-<option>Education</option>
-<option>Engineering</option>
-<option>Government Jobs</option>
-<option>Oil & Gas</option>
-<option>Remote Jobs</option>
-<option>driving Jobs</option>
-<option>nanny jobs</option>
-<option>janitor jobs</option>
-  
-</select>
-<button type="submit">Submit Job</button>
+
+    <input type="hidden" name="_subject" value="New Job Posting Registration">
+
+    <input type="text" name="company_name" placeholder="Company Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="job_title" placeholder="Job Title" required>
+
+    <select name="job_category" required>
+        <option value="">Select Job Category</option>
+        <option>IT & Technology</option>
+        <option>Banking</option>
+        <option>Healthcare</option>
+        <option>Education</option>
+        <option>Engineering</option>
+        <option>Government Jobs</option>
+        <option>Oil & Gas</option>
+        <option>Remote Jobs</option>
+        <option>Driving Jobs</option>
+        <option>Janitor Jobs</option>
+        <option>Nanny Jobs</option>
+    </select>
+
+    <button type="submit">Submit Job</button>
+
+</form>
+```
+
 </section>
 
 <section id="contact">
-<h2>
-we will send you and email to complete the registration, Contact Us</h2>
+    <h2>Contact Us</h2>
+
+```
 <p>Email: yotechtechnologies@gmail.com</p>
+
+<p>We help connect employers and job seekers across Nigeria.</p>
+```
+
 </section>
 
 <footer>
-<p>© 2026 Job Finder Nigeria</p>
+    <p>© 2026 Job Finder Nigeria. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
