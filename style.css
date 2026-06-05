@@ -1,0 +1,10 @@
+
+body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4}
+header{background:#0b3d91;color:white;padding:15px;text-align:center}
+nav a{color:white;margin:10px;text-decoration:none}
+section{padding:20px;background:white;margin:15px}
+.gallery img{width:30%;max-width:300px;margin:5px}
+form{display:flex;flex-direction:column;gap:10px;max-width:500px}
+input,select,button{padding:10px}
+button,.pay{background:#0b3d91;color:white;border:none;text-decoration:none;padding:12px;display:inline-block}
+footer{text-align:center;padding:15px;background:#222;color:white}
